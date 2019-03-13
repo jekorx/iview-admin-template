@@ -1,8 +1,8 @@
 {
-  "name": "iview-admin",
-  "version": "2.0.0",
-  "author": "Lison<lison16new@163.com>",
-  "private": false,
+  "name": "iview-admin-template",
+  "version": "1.0.0",
+  "author": "jekorx",
+  "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -29,8 +29,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
     "eslint-plugin-vue": "^5.2.2",
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "lint-staged": "^6.0.0",
     "mockjs": "^1.0.1-beta3",
     "vue-template-compiler": "^2.5.13"
