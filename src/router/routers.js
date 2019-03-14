@@ -32,9 +32,10 @@ export default [
         name: 'sys/consumer',
         meta: {
           icon: 'md-contact',
-          title: '用户管理'
+          title: '用户管理'/* ,
+          beforeCloseName: 'before_close_normal' */
         },
-        component: () => import(/* webpackChunkName: "sys/consumer" */'@/view/sys/consumer')
+        component: () => import(/* webpackChunkName: 'sys/consumer' */'@/view/sys/consumer')
       },
       {
         path: 'role',
@@ -43,7 +44,7 @@ export default [
           icon: 'md-contacts',
           title: '角色管理'
         },
-        component: () => import(/* webpackChunkName: "sys/role" */'@/view/sys/role')
+        component: () => import(/* webpackChunkName: 'sys/role' */'@/view/sys/role')
       },
       {
         path: 'resource',
@@ -52,7 +53,7 @@ export default [
           icon: 'md-basket',
           title: '资源管理'
         },
-        component: () => import(/* webpackChunkName: "sys/resource" */'@/view/sys/resource')
+        component: () => import(/* webpackChunkName: 'sys/resource' */'@/view/sys/resource')
       },
       {
         path: 'dictionary',
@@ -61,7 +62,7 @@ export default [
           icon: 'md-bookmarks',
           title: '字典管理'
         },
-        component: () => import(/* webpackChunkName: "sys/dictionary" */'@/view/sys/dictionary')
+        component: () => import(/* webpackChunkName: 'sys/dictionary' */'@/view/sys/dictionary')
       }
     ]
   },
@@ -73,7 +74,7 @@ export default [
       title: 'Login - 登录',
       hideInMenu: true
     },
-    component: () => import(/* webpackChunkName: "login" */'@/view/_login/login.vue')
+    component: () => import(/* webpackChunkName: 'login' */'@/view/_login/login.vue')
   },
   {
     path: '/',
@@ -94,7 +95,7 @@ export default [
           notCache: true,
           icon: 'ios-home'
         },
-        component: () => import(/* webpackChunkName: "home" */'@/view/_common/home')
+        component: () => import(/* webpackChunkName: 'home' */'@/view/_common/home')
       }
     ]
   },
@@ -114,7 +115,7 @@ export default [
           icon: 'md-notifications',
           title: '消息中心'
         },
-        component: () => import(/* webpackChunkName: "message_page" */'@/view/_common/message/index.vue')
+        component: () => import(/* webpackChunkName: 'message_page' */'@/view/_common/message/index.vue')
       }
     ]
   },
@@ -124,7 +125,7 @@ export default [
     meta: {
       hideInMenu: true
     },
-    component: () => import(/* webpackChunkName: "401" */'@/view/_error_page/401.vue')
+    component: () => import(/* webpackChunkName: '401' */'@/view/_error_page/401.vue')
   },
   {
     path: '/500',
@@ -132,7 +133,7 @@ export default [
     meta: {
       hideInMenu: true
     },
-    component: () => import(/* webpackChunkName: "500" */'@/view/_error_page/500.vue')
+    component: () => import(/* webpackChunkName: '500' */'@/view/_error_page/500.vue')
   },
   {
     path: '*',
@@ -140,6 +141,6 @@ export default [
     meta: {
       hideInMenu: true
     },
-    component: () => import(/* webpackChunkName: "404" */'@/view/_error_page/404.vue')
+    component: () => import(/* webpackChunkName: '404' */'@/view/_error_page/404.vue')
   }
 ]
