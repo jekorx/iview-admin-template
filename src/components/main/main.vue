@@ -97,8 +97,8 @@ export default {
       'getDic',
       'getLocation',
       'getIndustry',
-      'getUserInfo',
-      'getUnreadMessageCount'
+      'getUserInfo'/* ,
+      'getUnreadMessageCount' */
     ]),
     turnToPage (route) {
       let { name, params, query } = {}
@@ -167,7 +167,7 @@ export default {
       })
     }
     // 获取未读消息条数
-    this.getUnreadMessageCount()
+    // this.getUnreadMessageCount()
 
     /* 业务相关 start */
     // 获取字典数据

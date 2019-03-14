@@ -24,6 +24,19 @@ export const getUserInfo = () => {
     method: 'post'
   })
 }
+// 修改密码
+export const updatePwd = ({ checkPwd, newPwd, password }) => {
+  const data = {
+    checkPwd: md5(checkPwd),
+    newPwd: md5(newPwd),
+    password: md5(password)
+  }
+  return axios.request({
+    url: 'user/v1/password',
+    data,
+    method: 'put'
+  })
+}
 // 退出登录
 export const logout = () => {
   return axios.request({

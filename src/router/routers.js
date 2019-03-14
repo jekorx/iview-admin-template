@@ -32,8 +32,7 @@ export default [
         name: 'sys/consumer',
         meta: {
           icon: 'md-contact',
-          title: '用户管理',
-          beforeCloseName: 'before_close_normal'
+          title: '用户管理'
         },
         component: () => import(/* webpackChunkName: "sys/consumer" */'@/view/sys/consumer')
       },
@@ -42,8 +41,7 @@ export default [
         name: 'sys/role',
         meta: {
           icon: 'md-contacts',
-          title: '角色管理',
-          beforeCloseName: 'before_close_normal'
+          title: '角色管理'
         },
         component: () => import(/* webpackChunkName: "sys/role" */'@/view/sys/role')
       },
@@ -52,8 +50,7 @@ export default [
         name: 'sys/resource',
         meta: {
           icon: 'md-basket',
-          title: '资源管理',
-          beforeCloseName: 'before_close_normal'
+          title: '资源管理'
         },
         component: () => import(/* webpackChunkName: "sys/resource" */'@/view/sys/resource')
       },
@@ -62,8 +59,7 @@ export default [
         name: 'sys/dictionary',
         meta: {
           icon: 'md-bookmarks',
-          title: '字典管理',
-          beforeCloseName: 'before_close_normal'
+          title: '字典管理'
         },
         component: () => import(/* webpackChunkName: "sys/dictionary" */'@/view/sys/dictionary')
       }

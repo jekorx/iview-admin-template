@@ -1284,11 +1284,6 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
-area-data@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/area-data/-/area-data-1.0.0.tgz#497065709765e6318ed2209190b901cab7dd019f"
-  integrity sha512-tTdvX5nJRoj+LEu3K0ldoP5rIjuChJmA/KcfX7HVT5GovvhvAvWYSKrIBr5W6CUAKf844Q+ooThH/vtSGfy0nQ==
-
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -2124,15 +2119,15 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@*, commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.9.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
-  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
-
 commander@2.17.x, commander@~2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
+
+commander@^2.11.0, commander@^2.18.0, commander@^2.19.0, commander@^2.9.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -2885,13 +2880,6 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
-
-echarts@^4.0.4:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/echarts/-/echarts-4.1.0.tgz#d588c95f73c1a9928b9c73d5b769751c3185bcdc"
-  integrity sha512-gP1e1fNnAj9KJpTDLXV21brklbfJlqeINmpQDJCDta9TX3cPoqyQOiDVcEPzbOVHqgBRgTOwNxC5iGwJ89014A==
-  dependencies:
-    zrender "4.0.4"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -4682,16 +4670,7 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-iview-area@^1.5.17:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/iview-area/-/iview-area-1.6.0.tgz#271d318b36c66abd34f2a65d6b3860f2d967a7e9"
-  integrity sha512-+x7gnxWLgjl853DGZTXS2Lt3uKNL2dliqTZBM1f21JHye6gdpjyahJpehCZX4O/+Mr0EezBcf1yXXV27dfUTdg==
-  dependencies:
-    area-data "^1.0.0"
-    iview "^3.0.0"
-    vue "^2.5.17"
-
-iview@^3.0.0, iview@^3.3.0:
+iview@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/iview/-/iview-3.3.0.tgz#1190c5cd0a297e6a3cde03bf01a5e136a1eb013b"
   integrity sha512-PyqhfxEO9/4rcDNZ1FhMMGjcKh/y/F1p/00/UXrNxXBnih4rIb8GxgxYk0Y14bzuCL/AuMAisOBbQm51o5iOlQ==
@@ -5457,13 +5436,6 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
-
-mockjs@^1.0.1-beta3:
-  version "1.0.1-beta3"
-  resolved "https://registry.yarnpkg.com/mockjs/-/mockjs-1.0.1-beta3.tgz#d234f3c27256397564f2c955142e891909537209"
-  integrity sha1-0jTzwnJWOXVk8slVFC6JGQlTcgk=
-  dependencies:
-    commander "*"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -8288,7 +8260,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.5.17, vue@^2.6.8:
+vue@^2.6.8:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.8.tgz#f21cbc536bfc14f7d1d792a137bb12f69e60ea91"
   integrity sha512-+vp9lEC2Kt3yom673pzg1J7T1NVGuGzO9j8Wxno+rQN2WYVBX2pyo/RGQ3fXCLh2Pk76Skw/laAPCuBuEQ4diw==
@@ -8584,8 +8556,3 @@ yorkie@^2.0.0:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
-
-zrender@4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.4.tgz#910e60d888f00c9599073f23758dd23345fe48fd"
-  integrity sha512-03Vd/BDl/cPXp8E61f5+Xbgr/a4vDyFA+uUtUc1s+5KgcPbyY2m+78R/9LQwkR6QwFYHG8qk25Q8ESGs/qpkZw==

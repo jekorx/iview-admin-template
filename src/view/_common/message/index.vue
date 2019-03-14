@@ -60,7 +60,7 @@ const listDic = {
   trash: 'messageTrashList'
 }
 export default {
-  name: 'message_page',
+  name: 'MessagePage',
   data () {
     return {
       listLoading: true,

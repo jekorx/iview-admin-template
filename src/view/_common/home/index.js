@@ -1,2 +1,2 @@
-import home from './home.vue'
-export default home
+import Home from './home.vue'
+export default Home

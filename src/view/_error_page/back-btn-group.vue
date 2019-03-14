@@ -8,7 +8,7 @@
 <script>
 import './error.less'
 export default {
-  name: 'backBtnGroup',
+  name: 'BackBtnGroup',
   data () {
     return {
       second: 5,

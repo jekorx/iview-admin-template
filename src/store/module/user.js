@@ -88,8 +88,8 @@ export default {
           userName,
           password
         }).then(res => {
-          commit('setToken', res.data)
-          resolve()
+          if (res.code === 1) commit('setToken', res.data)
+          resolve(res)
         }).catch(err => {
           reject(err)
         })

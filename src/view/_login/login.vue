@@ -21,6 +21,7 @@ import { mapActions } from 'vuex'
 import ParticleWave from 'particle-wave'
 
 export default {
+  name: 'Login',
   components: {
     LoginForm
   },
@@ -62,12 +63,16 @@ export default {
       'getUserInfo'
     ]),
     handleSubmit ({ userName, password }) {
-      this.handleLogin({ userName, password }).then(res => {
-        this.getUserInfo().then(res => {
-          this.$router.push({
-            name: this.$config.homeName
+      this.handleLogin({ userName, password }).then(({ code, msg }) => {
+        if (code === 1) {
+          this.getUserInfo().then(res => {
+            this.$router.push({
+              name: this.$config.homeName
+            })
           })
-        })
+        } else {
+          this.$Message.warning(msg)
+        }
       })
     }
   }

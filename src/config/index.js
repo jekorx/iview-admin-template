@@ -26,5 +26,8 @@ export default {
    * @description 需要加载的插件
    */
   plugin: {
+    /* 'plugin-name': {
+      'option': 'option'
+    } */
   }
 }
