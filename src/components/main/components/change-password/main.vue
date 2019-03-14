@@ -25,6 +25,7 @@
   </Modal>
 </template>
 <script>
+import { mapActions } from 'vuex'
 import { updatePwd } from '@/api/user'
 
 export default {
@@ -79,17 +80,33 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'handleLogOut'
+    ]),
     savePwd () {
       this.$refs.formRef.validate(valid => {
         if (valid) {
           this.loading = true
-          updatePwd(this.form).then(({ code, msg }) => {
-            if (code === 1) {
-              this.$Message.success(msg)
-              this.loading = false
-              this.changePwdModal = false
-            } else {
-              this.$Message.error(msg)
+          this.$Modal.confirm({
+            closable: true,
+            width: 400,
+            title: '确认修改密码？',
+            content: '提示：修改密码后将自动退出登录！',
+            onOk: () => {
+              updatePwd(this.form).then(({ code, msg }) => {
+                if (code === 1) {
+                  this.loading = false
+                  this.changePwdModal = false
+                  this.$Message.success('密码修改成功，请重新登录！')
+                  this.handleLogOut().then(() => {
+                    this.$router.push({
+                      name: 'login'
+                    })
+                  })
+                } else {
+                  this.$Message.error(msg)
+                }
+              })
             }
           })
         }
