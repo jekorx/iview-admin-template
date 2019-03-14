@@ -1,5 +1,9 @@
 export default {
   /**
+  * @description 配置App名称
+  */
+  name: 'iView-admin',
+  /**
    * @description 配置显示在浏览器标签的title
    */
   title: 'iView-admin',

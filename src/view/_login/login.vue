@@ -1,11 +1,16 @@
 <template>
   <div class="login">
-    <div class="login-con">
-      <Card icon="log-in" title="欢迎登录" :bordered="false">
+    <div class="login-wrap">
+      <div class="login-logo">
+        <img :src="require('@/assets/images/logo-min.jpg')" :alt="$config.title" />
+        <p v-text="$config.name"></p>
+      </div>
+      <div class="login-con">
+        <h3>用户登录</h3>
         <div class="form-con">
           <login-form @on-success-valid="handleSubmit"></login-form>
         </div>
-      </Card>
+      </div>
     </div>
     <div class="wave" ref="waveRef"></div>
   </div>
