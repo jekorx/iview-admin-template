@@ -1,12 +1,117 @@
 @import '~iview/src/styles/index.less';
 
+// 定制菜单栏样式
 @menu-dark-title: #001529;
 @menu-dark-active-bg: #000c17;
 @layout-sider-background: #001529;
 
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 9px;
+  height: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 9px;
+  background-color: #999;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 10px;
+  background-color: #999;
+}
+// 菜单栏选中样式
 .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active {
   background: linear-gradient(to left, #2C89EB 0%, #2B88E9 100%) !important;
   &:hover {
     background: linear-gradient(to left, #2C89EB 0%, #2B88E9 100%) !important;
+  }
+}
+// 页面头
+.page-header {
+  height: 48px;
+  box-shadow: 0 0 4px #CCC;
+  margin: -16px -16px 16px;
+  padding: 8px 16px;
+  .title {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 10px
+    }
+  }
+  .btns {
+    text-align: right;
+    >button {
+      margin-left: 12px;
+    }
+  }
+}
+// 检索表单按钮margin
+.ivu-form {
+  >button {
+    margin-left: 12px;
+    margin-bottom: 24px;
+  }
+}
+// 列表分页组件居中
+.ivu-page {
+  padding-top: 12px;
+  text-align: center;
+}
+// 表格操作按钮
+span.operation {
+  padding: 0 3px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+// 表单左右两边边距
+@custom-padding: 110px;
+@custom-padding-offset: 16px;
+.custom-form {
+  overflow-y: auto;
+  padding-top: @custom-padding-offset / 2 * 3;
+  padding-right: @custom-padding + @custom-padding-offset;
+  padding-bottom: @custom-padding-offset / 2;
+  margin-top: -@custom-padding-offset;
+  margin-right: -@custom-padding-offset;
+  margin-bottom: -@custom-padding-offset;
+  .ivu-form-item-label {
+    width: @custom-padding;
+  }
+  .ivu-form-item-content {
+    margin-left: @custom-padding;
+  }
+}
+// readonly输入框背景样式
+.ivu-input {
+  &[readonly="readonly"] {
+    background-color: #F6F6F6;
+  }
+}
+// 详情页面
+.page-detail {
+  padding-top: @custom-padding-offset;
+  padding-bottom: @custom-padding-offset;
+  padding-right: @custom-padding;
+  line-height: 1.5;
+  font-size: 1.1em;
+  p {
+    padding-bottom: 6px;
+    >span:first-child {
+      display: inline-block;
+      text-align: right;
+      padding-right: 6px;
+      width: @custom-padding;
+    }
   }
 }

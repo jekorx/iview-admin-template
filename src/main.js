@@ -9,8 +9,14 @@ import config from '@/config'
 import installPlugin from '@/plugin'
 import './index.less'
 import '@/assets/icons/iconfont.css'
+import PageHeader from '_c/page-header'
+import Operation from '_c/operation'
 
 Vue.use(iView)
+// 自定义页面头按钮组件
+Vue.component('PageHeader', PageHeader)
+// 表格操作按钮
+Vue.prototype.$Operation = Operation
 /**
  * @description 注册admin内置插件
  */

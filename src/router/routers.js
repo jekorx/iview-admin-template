@@ -18,6 +18,7 @@ import Main from '@/components/main'
 
 export default [
   /* 业务相关 start */
+  // 系统管理
   {
     path: '/sys',
     name: 'sys',
@@ -28,14 +29,14 @@ export default [
     component: Main,
     children: [
       {
-        path: 'consumer',
-        name: 'sys/consumer',
+        path: 'user',
+        name: 'sys/user',
         meta: {
           icon: 'md-contact',
           title: '用户管理'/* ,
           beforeCloseName: 'before_close_normal' */
         },
-        component: () => import(/* webpackChunkName: 'sys/consumer' */'@/view/sys/consumer')
+        component: () => import(/* webpackChunkName: 'sys/user' */'@/view/sys/user')
       },
       {
         path: 'role',

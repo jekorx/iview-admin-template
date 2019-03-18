@@ -401,3 +401,16 @@ export const setTitle = (routeItem, vm) => {
   const resTitle = pageTitle ? `${title} - ${pageTitle}` : title
   window.document.title = resTitle
 }
+
+/**
+ * 防抖
+ * @param {*} fn 具体执行方法
+ * @param {*} delay 间隔时间，默认800毫秒
+ */
+export const debounce = (fn, delay = 800) => {
+  let timer = null
+  return () => {
+    clearTimeout(timer)
+    timer = setTimeout(() => fn && fn(), delay)
+  }
+}

@@ -8,6 +8,10 @@ export default {
    */
   title: 'iView-admin',
   /**
+   * @description 默认密码123456
+   */
+  dftPwd: '123456',
+  /**
    * @description token在Cookie中存储的天数，默认1天
    */
   cookieExpires: 1,
