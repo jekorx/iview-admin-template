@@ -21,6 +21,25 @@
   width: 10px;
   background-color: #999;
 }
+// 花里胡哨的切换效果
+.fade-transform {
+  &-enter {
+    opacity: 0;
+    transform: translateX(-50px);
+    &-active {
+      transition: all .5s;
+    }
+  }
+  &-leave {
+    &-to {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    &-active {
+      transition: all .5s;
+    }
+  }
+}
 // 菜单栏选中样式
 .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active {
   background: linear-gradient(to left, #2C89EB 0%, #2B88E9 100%) !important;
